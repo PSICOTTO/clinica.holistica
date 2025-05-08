@@ -152,23 +152,24 @@
 }
 
 			  
-  #sobre .container {
-      display: flex;
-      align-items: center;
-      max-width: 800px;
-      margin: auto;
-    }
-    .text {
-      flex: 1;
-      padding-right: 20px;
-    }
-    .image {
-      flex: 1;
-    }
-    .image img {
-      max-width: 100%;
-      height: auto;
-    }
+  #.sobre
+
+.fcl {
+  display: grid; /* Grid layout */
+  grid-template-columns: auto 1fr; /* Primeira coluna para a imagem, segunda para a legenda */
+  gap: 10px; /* Espaçamento entre imagem e legenda */
+  align-items: center; /* Alinha verticalmente no centro */
+}
+
+.fcl img {
+  max-width: 200px; /* Tamanho da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.fcl .legenda {
+  font-size: 16px;
+  color: #333;
+}
     </style>
 </head>
 <body>
@@ -194,14 +195,15 @@
         <a href="#servicos" class="cta-button">Saiba mais sobre nossos atendimentos.</a>
     </section>
 
-    <!-- Seção: Sobre -->
+    <!-- Seção: Sobre --> 
+	
     <section id="sobre">
-  <div class="container">
-    <div class="text">
-      <h2>Sobre a terapeuta</h2>
-      <p> Eu como terapeuta, acredito na cura holística. Minha missão é proporcionar tratamentos personalizados que envolvem o corpo, a mente e o espírito. Sou formada profissionalmente em varios estilos diferentes de terapias dentro desta area, com experiência de mais de 30 anos com Tarot Cigano e Marselha. oferecendo o melhor cuidado para você.</p>
-    <div class="image">
-      <img src="IMG-20250410-WA0015.jpg" alt="Foto de rosto da terapeuta">
+	    <h2>Sobre a terapeuta</h2>
+    <div class="fcl"> 
+	    <img src="IMG-20250410-WA0015.jpg" alt="Foto de rosto da terapeuta">
+     <div class="legenda"> Eu como terapeuta, acredito na cura holística. Minha missão é proporcionar tratamentos personalizados que envolvem o corpo, a mente e o espírito. Sou formada profissionalmente em varios estilos diferentes de terapias dentro desta area, com experiência de mais de 30 anos com Tarot Cigano e Marselha. oferecendo o melhor cuidado para você.</div>
+    </div>
+     
    </section>
  </div>
   </div>
