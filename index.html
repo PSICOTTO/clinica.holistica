@@ -153,24 +153,28 @@
 
 			
 
-#sobre .fcl {
-  display: flex; /* Grid layout */
-  gap: 10px;
-  align-items: center; /* Alinha verticalmente no centro */
-	flex-wrap: nowrap;
-}
+.container {
+      display: flex;
+      align-items: center; /* Alinha verticalmente */
+      max-width: 600px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+    }
 
-#sobre .fcl img {
-  max-width: 100px; /* Tamanho da imagem */
-  height: 250px; /* Mantém a proporção da imagem */
-}
+    .container img {
+      width: 150px;
+      height: auto;
+      border-radius: 5px;
+      margin-right: 15px;
+    }
 
-#sobre .fcl .legenda {
-  font-size: 20px;
-  color: #333;
-	text-align: left 
-	
-}
+    .caption {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
     </style>
 </head>
 <body>
@@ -200,9 +204,9 @@
 	
     <section id="sobre">
 	    <h2>Sobre a terapeuta</h2>
-    <div class="fcl"> 
+    <div class="container"> 
 	    <img src="teca.jpg" alt="Foto de rosto da terapeuta">
-     <div class="legenda"> 
+     <div class="caption"> 
      Eu como terapeuta, acredito na cura holística. Minha missão é proporcionar tratamentos personalizados que envolvem o corpo, a mente e o espírito. Sou formada profissionalmente em varios estilos diferentes de terapias dentro desta area, com experiência de mais de 30 anos com Tarot Cigano e Marselha. oferecendo o melhor cuidado para você.
      </div>
  </div>
